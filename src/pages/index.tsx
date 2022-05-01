@@ -1,16 +1,21 @@
 import React from 'react';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
-import Title from '@/components/Title';
+import Layout from '@/components/Layout';
+import FullBleed from '@/components/FullBleed';
 
-export default function Home() {
-  return (
-    <main>
-      <Title>Hello TypeScript!</Title>
-      <p>A TypeScript starter for Gatsby. Great for advanced users.</p>
-      <p>
-        Follow me on Twitter (
-        <a href="https://twitter.com/jpedroschmitz">@jpedroschmitz</a>)
-      </p>
-    </main>
-  );
-}
+const Home = () => (
+  <Layout>
+    <Parallax pages={2}>
+      <ParallaxLayer offset={0} speed={2.5}>
+        <h1>Scroll down</h1>
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={1} speed={0.5}>
+        <h1>Scroll up</h1>
+      </ParallaxLayer>
+    </Parallax>
+  </Layout>
+);
+
+export default Home;
