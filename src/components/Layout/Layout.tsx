@@ -1,9 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import GlobalStyles from '../GlobalStyles';
+
+import SEO from '@/components/SEO';
+import GlobalStyles from '@/components/GlobalStyles';
 
 type LayoutProps = {
   children: React.ReactNode;
+  title: string;
+  description?: string;
+  meta?: {
+    name?: string | undefined;
+    content?: string | undefined;
+    property?: string | undefined;
+  }[];
 };
 
 const Wrapper = styled.span`
@@ -17,9 +26,15 @@ const Wrapper = styled.span`
   }
 `;
 
-const Layout = ({ children }: LayoutProps) => (
+const Layout = ({
+  children,
+  title,
+  description = ``,
+  meta = [],
+}: LayoutProps) => (
   <>
     <GlobalStyles />
+    <SEO title={title} description={description} meta={meta} />
     <Wrapper>{children}</Wrapper>
   </>
 );

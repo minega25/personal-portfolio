@@ -1,6 +1,9 @@
 module.exports = {
-  // Since `gatsby-plugin-typescript` is automatically included in Gatsby you
-  // don't need to define it here (just if you need to change the options)
+  siteMetadata: {
+    title: `Patrick S. Minega`,
+    description: `Patrick S. Minega's portfolio website.`,
+    author: `@patricksminega`,
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-typography`,
