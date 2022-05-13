@@ -1,20 +1,6 @@
 import Typography from 'typography';
+import irvingTheme from 'typography-theme-irving';
 
-const typography = new Typography({
-  baseFontSize: '18px',
-  headerFontFamily: [
-    'League Spartan',
-    'Helvetica Neue',
-    'Segoe UI',
-    'Helvetica',
-    'Arial',
-    'sans-serif',
-  ],
-  bodyFontFamily: [
-    'Libre Baskerville',
-    'Palatino Linotype',
-    'Times New Roman,serif',
-  ],
-});
+const typography = new Typography(irvingTheme);
 
 export default typography;

@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-ts",
+  "name": "patricksminega.com",
   "description": "A TypeScript starter for Gatsby that includes all you need to build amazing projects",
   "version": "1.0.0",
   "private": true,
@@ -41,7 +41,8 @@
     "react-typography": "0.16.20",
     "styled-components": "5.3.5",
     "tsconfig-paths-webpack-plugin": "3.5.2",
-    "typography": "0.16.21"
+    "typography": "0.16.21",
+    "typography-theme-irving": "0.16.19"
   },
   "devDependencies": {
     "@babel/preset-react": "7.16.7",
