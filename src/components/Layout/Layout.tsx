@@ -25,6 +25,12 @@ const Wrapper = styled.span`
   & > * {
     grid-column: 2;
   }
+  padding-left: 12px;
+  padding-right: 12px;
+  @media screen and (min-width: 512px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 `;
 
 const Layout = ({

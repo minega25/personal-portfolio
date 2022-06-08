@@ -16,9 +16,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@/static/*": ["./static/*"]
+      "@/static/*": ["./static/*"],
+      "@/svg/*": ["./svg/*"]
     }
   },
   "exclude": ["node_modules"],
-  "include": ["./src/**/*", "./__helpers__/*"]
+  "include": ["./src/**/*", "./__helpers__/*", "./custom.d.ts"]
 }
