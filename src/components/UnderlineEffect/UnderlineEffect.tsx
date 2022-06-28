@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const UnderlineEffectWrapper = styled.span`
   display: inline-block;
   position: relative;
-  color: var(--color-text);
+  color: var(--color-primary);
 
   :after {
     content: '';
@@ -14,7 +14,7 @@ const UnderlineEffectWrapper = styled.span`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: var(--color-text);
+    background-color: var(--color-primary);
     transform-origin: bottom right;
     transition: transform 0.25s ease-in-out;
   }
@@ -25,8 +25,8 @@ const UnderlineEffectWrapper = styled.span`
   }
 `;
 
-const UnderlineEffect = ({ children }) => (
-  <UnderlineEffectWrapper>{children}</UnderlineEffectWrapper>
+const UnderlineEffect = ({ children, ...props }) => (
+  <UnderlineEffectWrapper {...props}>{children}</UnderlineEffectWrapper>
 );
 
 export default UnderlineEffect;

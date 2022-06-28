@@ -40,6 +40,18 @@ const MagicScriptTag = () => {
         ? '${COLORS.light.primary}'
         : '${COLORS.dark.primary}'
     );
+    root.style.setProperty(
+      '--color-subtle-floating',
+      colorMode === 'light'
+        ? '${COLORS.light.subtleFloating}'
+        : '${COLORS.dark.subtleFloating}'
+    );
+    root.style.setProperty(
+      '--shadow-color',
+      colorMode === 'light'
+        ? '${COLORS.light.shadow}'
+        : '${COLORS.dark.shadow}'
+    );
     root.style.setProperty('--initial-color-mode', colorMode);
   })()  
     `;

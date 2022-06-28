@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 
 const FullBleed = styled.span`
@@ -5,4 +6,8 @@ const FullBleed = styled.span`
   grid-column: 1/4;
 `;
 
-export default FullBleed;
+const FullBleedWrapper = ({ children, ...delegated }) => (
+  <FullBleed {...delegated}>{children}</FullBleed>
+);
+
+export default FullBleedWrapper;

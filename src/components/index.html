@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ice Cream Flavors</title>
+    <style>
+      li {
+        width: 118px;
+        padding: 5px;
+        text-align: center;
+        list-style-type: none;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+      }
+      @media (max-width: 599px) {
+        ul {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Butterscotch</li>
+      <li>Caramel Apple</li>
+      <li>Chocolate</li>
+      <li>Vanilla</li>
+    </ul>
+  </body>
+</html>

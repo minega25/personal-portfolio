@@ -44,6 +44,16 @@ const ThemeProvider = ({ children }: ThemeProviderProps) => {
         `--color-primary`,
         newValue === `light` ? COLORS.light.primary : COLORS.dark.primary,
       );
+      root.style.setProperty(
+        `--shadow-color`,
+        newValue === `light` ? COLORS.light.shadow : COLORS.dark.shadow,
+      );
+      root.style.setProperty(
+        `--color-subtle-floating`,
+        newValue === `light`
+          ? COLORS.light.subtleFloating
+          : COLORS.dark.subtleFloating,
+      );
     }
 
     return {
