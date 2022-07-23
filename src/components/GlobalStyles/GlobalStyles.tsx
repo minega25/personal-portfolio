@@ -4,7 +4,7 @@ export default createGlobalStyle`
   :root {
     --font-weight-bold: 600;
     --font-weight-medium: 500;
-    --font-weight-light: 400;
+    --font-weight-light: 300;
     --color-text: hsl(222deg, 22%, 5%);
     --color-background: hsl(0deg, 0%, 100%);
     --color-blurred-background: hsla(0deg, 0%, 100%, 0.85);
@@ -34,6 +34,7 @@ export default createGlobalStyle`
     --color-gray-700: hsl(225deg, 12%, 40%);
     --color-gray-900: hsl(225deg, 25%, 20%);
     --color-gray-1000: hsl(225deg, 15%, 15%);
+    --shadow-color: hsl(0deg, 0%, 36%);
   }
   *, *::before, *::after {
   box-sizing: border-box;

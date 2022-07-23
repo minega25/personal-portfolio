@@ -5,5 +5,13 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     resolve: {
       plugins: [new TsconfigPathsPlugin()],
     },
+    module: {
+      rules: [
+        {
+          test: /\.glb$/,
+          use: [`url-loader`],
+        },
+      ],
+    },
   });
 };
